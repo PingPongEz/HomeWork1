@@ -13,6 +13,7 @@
 		14540F6C27DBCD7E00D06A89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14540F6A27DBCD7E00D06A89 /* Main.storyboard */; };
 		14540F6E27DBCD8000D06A89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14540F6D27DBCD8000D06A89 /* Assets.xcassets */; };
 		14540F7127DBCD8000D06A89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14540F6F27DBCD8000D06A89 /* LaunchScreen.storyboard */; };
+		145DC52D27DC9EAA0087288B /* SecondQuest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145DC52C27DC9EAA0087288B /* SecondQuest.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		14540F6D27DBCD8000D06A89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14540F7027DBCD8000D06A89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14540F7227DBCD8000D06A89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		145DC52C27DC9EAA0087288B /* SecondQuest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondQuest.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				14540F6427DBCD7E00D06A89 /* AppDelegate.swift */,
 				14540F6627DBCD7E00D06A89 /* SceneDelegate.swift */,
 				14540F6827DBCD7E00D06A89 /* ViewController.swift */,
+				145DC52C27DC9EAA0087288B /* SecondQuest.storyboard */,
 				14540F6A27DBCD7E00D06A89 /* Main.storyboard */,
 				14540F6D27DBCD8000D06A89 /* Assets.xcassets */,
 				14540F6F27DBCD8000D06A89 /* LaunchScreen.storyboard */,
@@ -128,6 +131,7 @@
 				14540F7127DBCD8000D06A89 /* LaunchScreen.storyboard in Resources */,
 				14540F6E27DBCD8000D06A89 /* Assets.xcassets in Resources */,
 				14540F6C27DBCD7E00D06A89 /* Main.storyboard in Resources */,
+				145DC52D27DC9EAA0087288B /* SecondQuest.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

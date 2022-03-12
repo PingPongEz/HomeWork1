@@ -8,12 +8,53 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet var redLight: UIView!
+    @IBOutlet var yellowLight: UIView!
+    @IBOutlet var greenLight: UIView!
+    @IBOutlet var button: UIButton!
+    
+    enum color {
+        case Red
+        case Yellow
+        case Green
     }
-
-
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        
+        redLight.alpha = 0.4
+        redLight.layer.cornerRadius = 105
+        
+        yellowLight.alpha = 0.4
+        yellowLight.layer.cornerRadius = 105
+        
+        greenLight.alpha = 0.4
+        greenLight.layer.cornerRadius = 105
+        
+        button.setTitle("Press Me!", for: .normal)
+        button.layer.cornerRadius = 10
+    }
+    
+        var currentColor = color.Green
+    
+    @IBAction func pressTheButton() {
+         
+        switch currentColor {
+        case .Red:
+            yellowLight.alpha = 1
+            redLight.alpha = 0.4
+            currentColor = .Yellow
+        case .Yellow:
+            yellowLight.alpha = 0.4
+            greenLight.alpha = 1
+            currentColor = .Green
+        case .Green:
+            greenLight.alpha = 0.4
+            redLight.alpha = 1
+            currentColor = .Red
+        }
+    }
+    
 }
 
