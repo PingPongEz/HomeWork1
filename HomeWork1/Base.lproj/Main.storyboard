@@ -16,28 +16,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3S-kf-dmR">
-                                <rect key="frame" x="22" y="482" width="384" height="370"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <view verifyAmbiguity="ignoreSizes" opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T8n-g1-4od">
-                                <rect key="frame" x="22" y="80" width="384" height="370"/>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8n-g1-4od">
+                                <rect key="frame" x="29" y="81" width="370" height="370"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3S-kf-dmR">
+                                <rect key="frame" x="29" y="485" width="370" height="370"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemFillColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="A3S-kf-dmR" secondAttribute="trailing" constant="22" id="3F1-Sl-Xrg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="T8n-g1-4od" secondAttribute="trailing" constant="22" id="7ne-uc-weD"/>
-                            <constraint firstItem="A3S-kf-dmR" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="NcU-Ig-9Uf"/>
-                            <constraint firstItem="A3S-kf-dmR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TMo-mB-mEe"/>
-                            <constraint firstItem="T8n-g1-4od" firstAttribute="top" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="i94-ff-doe"/>
-                            <constraint firstItem="T8n-g1-4od" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mRh-2i-pjJ"/>
-                            <constraint firstItem="A3S-kf-dmR" firstAttribute="top" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="438" id="nZU-LA-ENU"/>
-                            <constraint firstItem="T8n-g1-4od" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="pli-jy-sZQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="T8n-g1-4od" secondAttribute="bottom" constant="442" id="qzT-9b-04i"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="A3S-kf-dmR" secondAttribute="bottom" constant="40" id="wv5-vt-ib3"/>
+                            <constraint firstItem="T8n-g1-4od" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="G3j-3P-KK5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="A3S-kf-dmR" secondAttribute="bottom" constant="37" id="JfX-LR-W6k"/>
+                            <constraint firstItem="T8n-g1-4od" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="THe-Ro-v7C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A3S-kf-dmR" secondAttribute="trailing" constant="29" id="UOD-N2-3HL"/>
+                            <constraint firstItem="A3S-kf-dmR" firstAttribute="top" secondItem="T8n-g1-4od" secondAttribute="bottom" constant="34" id="he4-04-UtT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T8n-g1-4od" secondAttribute="trailing" constant="29" id="hrY-yP-gV1"/>
+                            <constraint firstItem="T8n-g1-4od" firstAttribute="height" secondItem="A3S-kf-dmR" secondAttribute="height" id="m4g-Lo-WWW"/>
+                            <constraint firstItem="A3S-kf-dmR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="zCJ-hj-rDb"/>
                         </constraints>
                     </view>
                 </viewController>
