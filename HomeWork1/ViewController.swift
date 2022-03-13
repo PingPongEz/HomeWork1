@@ -24,13 +24,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         redLight.alpha = 0.4
-        redLight.layer.cornerRadius = 105
+        redLight.layer.cornerRadius = redLight.layer.frame.height / 2
         
         yellowLight.alpha = 0.4
-        yellowLight.layer.cornerRadius = 105
+        yellowLight.layer.cornerRadius = yellowLight.layer.frame.height / 2
         
         greenLight.alpha = 0.4
-        greenLight.layer.cornerRadius = 105
+        greenLight.layer.cornerRadius = greenLight.layer.frame.height / 2
         
         button.setTitle("Press Me!", for: .normal)
         button.layer.cornerRadius = 10

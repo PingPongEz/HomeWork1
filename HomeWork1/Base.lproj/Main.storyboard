@@ -51,34 +51,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="fXv-dP-Z4W">
-                                <rect key="frame" x="107" y="44" width="214" height="672"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDG-in-yDc">
-                                        <rect key="frame" x="0.0" y="0.0" width="214" height="210"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uya-SM-RNW">
-                                        <rect key="frame" x="0.0" y="231" width="214" height="210"/>
-                                        <color key="backgroundColor" red="0.86078917980000003" green="0.81653237940000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eva-YC-NfX">
-                                        <rect key="frame" x="0.0" y="462" width="214" height="210"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="Eva-YC-NfX" firstAttribute="width" secondItem="FDG-in-yDc" secondAttribute="width" id="Kr9-pR-5jf"/>
-                                    <constraint firstItem="uya-SM-RNW" firstAttribute="height" secondItem="FDG-in-yDc" secondAttribute="height" id="bZ4-hW-GnF"/>
-                                    <constraint firstItem="Eva-YC-NfX" firstAttribute="height" secondItem="FDG-in-yDc" secondAttribute="height" id="pou-Rq-BWR"/>
-                                    <constraint firstItem="uya-SM-RNW" firstAttribute="width" secondItem="FDG-in-yDc" secondAttribute="width" id="qYI-Kp-iyh"/>
-                                </constraints>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7V1-8e-TCu">
-                                <rect key="frame" x="138" y="785" width="152" height="40"/>
+                                <rect key="frame" x="138" y="785" width="152" height="31"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="0Ky-NX-Dic"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="151" id="Nxc-Hu-bFx"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -87,19 +63,36 @@
                                     <action selector="pressTheButton" destination="dnI-uz-gYq" eventType="touchUpInside" id="5JG-Az-gEP"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="RX3-QC-Cv1">
+                                <rect key="frame" x="109" y="44" width="210" height="672"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FDG-in-yDc">
+                                        <rect key="frame" x="0.0" y="0.0" width="210" height="210"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uya-SM-RNW">
+                                        <rect key="frame" x="0.0" y="231" width="210" height="210"/>
+                                        <color key="backgroundColor" red="0.86078917980000003" green="0.81653237940000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eva-YC-NfX">
+                                        <rect key="frame" x="0.0" y="462" width="210" height="210"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="Y6U-2F-Ldt"/>
+                                    <constraint firstAttribute="height" constant="672" id="zNh-3w-Fcg"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Nt0-tW-5zn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7V1-8e-TCu" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Nt0-tW-5zn" secondAttribute="leading" constant="139" id="1Eb-zJ-Vys"/>
-                            <constraint firstItem="fXv-dP-Z4W" firstAttribute="top" secondItem="Nt0-tW-5zn" secondAttribute="top" id="5se-bK-qLc"/>
-                            <constraint firstItem="fXv-dP-Z4W" firstAttribute="leading" secondItem="Nt0-tW-5zn" secondAttribute="leading" constant="107" id="7mY-Sq-Kwg"/>
-                            <constraint firstItem="Nt0-tW-5zn" firstAttribute="bottom" secondItem="7V1-8e-TCu" secondAttribute="bottom" constant="67" id="8yN-qO-aeA"/>
-                            <constraint firstItem="7V1-8e-TCu" firstAttribute="centerX" secondItem="fJi-2V-IkX" secondAttribute="centerX" id="C50-sf-uk2"/>
-                            <constraint firstItem="Nt0-tW-5zn" firstAttribute="trailing" secondItem="fXv-dP-Z4W" secondAttribute="trailing" constant="107" id="Jjp-k3-U34"/>
-                            <constraint firstItem="7V1-8e-TCu" firstAttribute="top" secondItem="fXv-dP-Z4W" secondAttribute="bottom" constant="69" id="K3G-7o-94l"/>
-                            <constraint firstItem="Nt0-tW-5zn" firstAttribute="bottom" secondItem="fXv-dP-Z4W" secondAttribute="bottom" constant="176" id="MZL-1O-7bI"/>
-                            <constraint firstItem="fXv-dP-Z4W" firstAttribute="centerX" secondItem="fJi-2V-IkX" secondAttribute="centerX" id="ekn-Dd-aog"/>
+                            <constraint firstItem="RX3-QC-Cv1" firstAttribute="centerX" secondItem="fJi-2V-IkX" secondAttribute="centerX" id="1dk-DQ-YcE"/>
+                            <constraint firstItem="RX3-QC-Cv1" firstAttribute="top" secondItem="Nt0-tW-5zn" secondAttribute="top" id="3Xz-j3-Jiw"/>
+                            <constraint firstItem="Nt0-tW-5zn" firstAttribute="bottom" secondItem="7V1-8e-TCu" secondAttribute="bottom" constant="76" id="RCu-ZO-j6D"/>
+                            <constraint firstItem="7V1-8e-TCu" firstAttribute="centerX" secondItem="fJi-2V-IkX" secondAttribute="centerX" id="VQF-Py-Oyx"/>
                             <constraint firstItem="Nt0-tW-5zn" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="7V1-8e-TCu" secondAttribute="trailing" constant="138" id="xei-Df-fon"/>
                         </constraints>
                     </view>
