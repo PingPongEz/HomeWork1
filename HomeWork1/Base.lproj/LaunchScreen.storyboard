@@ -17,11 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="40Q-Vb-MRq">
-                                <rect key="frame" x="165" y="447.66666666666669" width="99" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="Log-PC-Zv6"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="jbs-CM-Ro3"/>
-                                </constraints>
+                                <rect key="frame" x="196.66666666666666" y="454.66666666666669" width="34.666666666666657" height="17"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -30,9 +26,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
-                            <constraint firstItem="40Q-Vb-MRq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="165" id="Cwk-g3-kKD"/>
-                            <constraint firstItem="40Q-Vb-MRq" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ddz-Ee-c2W"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="40Q-Vb-MRq" secondAttribute="trailing" constant="164" id="jvB-ro-ovh"/>
+                            <constraint firstItem="40Q-Vb-MRq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Zle-nl-Duz"/>
+                            <constraint firstItem="40Q-Vb-MRq" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="dPA-I0-m58"/>
                         </constraints>
                     </view>
                 </viewController>
