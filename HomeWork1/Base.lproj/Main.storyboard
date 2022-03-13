@@ -51,49 +51,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7V1-8e-TCu">
-                                <rect key="frame" x="138" y="785" width="152" height="31"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="151" id="Nxc-Hu-bFx"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Press Me!"/>
-                                <connections>
-                                    <action selector="pressTheButton" destination="dnI-uz-gYq" eventType="touchUpInside" id="5JG-Az-gEP"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="RX3-QC-Cv1">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="RX3-QC-Cv1">
                                 <rect key="frame" x="109" y="44" width="210" height="672"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FDG-in-yDc">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDG-in-yDc">
                                         <rect key="frame" x="0.0" y="0.0" width="210" height="210"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uya-SM-RNW">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uya-SM-RNW">
                                         <rect key="frame" x="0.0" y="231" width="210" height="210"/>
                                         <color key="backgroundColor" red="0.86078917980000003" green="0.81653237940000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eva-YC-NfX">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eva-YC-NfX">
                                         <rect key="frame" x="0.0" y="462" width="210" height="210"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="210" id="Y6U-2F-Ldt"/>
-                                    <constraint firstAttribute="height" constant="672" id="zNh-3w-Fcg"/>
-                                </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7V1-8e-TCu">
+                                <rect key="frame" x="138" y="782" width="152" height="34"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7V1-8e-TCu" secondAttribute="height" multiplier="76:17" id="FD0-fg-HbL"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Press Me!">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressTheButton" destination="dnI-uz-gYq" eventType="touchUpInside" id="5JG-Az-gEP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Nt0-tW-5zn"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.32838883316739198" green="0.89826533981225454" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="7V1-8e-TCu" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Nt0-tW-5zn" secondAttribute="leading" constant="139" id="1Eb-zJ-Vys"/>
-                            <constraint firstItem="RX3-QC-Cv1" firstAttribute="centerX" secondItem="fJi-2V-IkX" secondAttribute="centerX" id="1dk-DQ-YcE"/>
-                            <constraint firstItem="RX3-QC-Cv1" firstAttribute="top" secondItem="Nt0-tW-5zn" secondAttribute="top" id="3Xz-j3-Jiw"/>
-                            <constraint firstItem="Nt0-tW-5zn" firstAttribute="bottom" secondItem="7V1-8e-TCu" secondAttribute="bottom" constant="76" id="RCu-ZO-j6D"/>
-                            <constraint firstItem="7V1-8e-TCu" firstAttribute="centerX" secondItem="fJi-2V-IkX" secondAttribute="centerX" id="VQF-Py-Oyx"/>
-                            <constraint firstItem="Nt0-tW-5zn" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="7V1-8e-TCu" secondAttribute="trailing" constant="138" id="xei-Df-fon"/>
+                            <constraint firstItem="RX3-QC-Cv1" firstAttribute="height" secondItem="fJi-2V-IkX" secondAttribute="height" multiplier="0.725702" id="IaQ-sK-17d"/>
+                            <constraint firstItem="7V1-8e-TCu" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Nt0-tW-5zn" secondAttribute="leading" constant="138" id="MTv-tw-y8g"/>
+                            <constraint firstItem="RX3-QC-Cv1" firstAttribute="top" secondItem="Nt0-tW-5zn" secondAttribute="top" id="X9s-lu-mdO"/>
+                            <constraint firstItem="RX3-QC-Cv1" firstAttribute="width" secondItem="fJi-2V-IkX" secondAttribute="height" multiplier="105:463" id="c4p-3r-f5E"/>
+                            <constraint firstItem="Nt0-tW-5zn" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="7V1-8e-TCu" secondAttribute="trailing" constant="138" id="dmv-Lb-scE"/>
+                            <constraint firstItem="RX3-QC-Cv1" firstAttribute="centerX" secondItem="fJi-2V-IkX" secondAttribute="centerX" id="jB4-6z-ihy"/>
+                            <constraint firstItem="Nt0-tW-5zn" firstAttribute="bottom" secondItem="7V1-8e-TCu" secondAttribute="bottom" constant="76" id="jcb-Fb-LMA"/>
+                            <constraint firstItem="7V1-8e-TCu" firstAttribute="centerX" secondItem="fJi-2V-IkX" secondAttribute="centerX" id="q8I-l8-Gko"/>
                         </constraints>
                     </view>
                     <connections>
@@ -109,6 +109,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
